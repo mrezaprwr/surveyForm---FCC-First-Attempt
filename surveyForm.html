@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="surveyStyle.css">
+</head>
+<body>
+	<h1 id="title">Blog Feedback Form</h1>
+	<div id="formContent">
+		<p id="description">
+			Let us know your opinion about our Blog
+		</p>
+		<form id="survey-form">
+			<div class="rowTab">
+				<div class="labels">
+					<label for="name" id="name-label">Name:</label>
+				</div>
+				<div class="rightTab">
+					<input type="text" name="name" id="name" placeholder="Enter your Name" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="email" id="email-label">Email:</label>
+				</div>
+				<div class="rightTab">
+					<input type="email" name="email" id="email" placeholder="Enter your Email" required>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="age" id="number-label">Age:</label>
+				</div>
+				<div class="rightTab">
+					<input type="number" min="1" max="120" name="age" id="number" placeholder="Age">
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="education">Education:</label>
+				</div>
+				<div class="rightTab">
+					<select name="education" size="1" id="dropdown">
+						<option disabled selected value>Select an Option</option>
+						<option value="elementary-school">Elementary School</option>
+						<option value="junior-high-school">Junior High School</option>
+						<option value="high-school">High School</option>
+						<option value="university">University</option>
+					</select> 
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label>How do you know my blog?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="radio"><input type="radio" name="knowFrom" value="googleSearch"> <label for="knowFrom1">
+						Google Search</label></li>
+						<li class="radio"><input type="radio" name="knowFrom" value="facebookPost"><label for="knowFrom2">
+						Facebook Post</label></li>
+						<li class="radio"><input type="radio" name="knowFrom" value="twitterPost"><label for="knowFrom3">
+						Twitter Post</label></li>
+						<li class="radio"><input type="radio" name="knowFrom" value="otherBlog"><label for="knowFrom4">
+						Other Blog</label></li>
+						<li class="radio"><input type="radio" name="knowFrom" value="friendRec"><label for="knowFrom5">
+						Friend Recommendation</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="recommendBlog">How would you like to recommend my blog?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="radio"><input type="radio" name="recommendBlog" value="definitely"> <label for="recommendBlog1">
+						Definitely</label></li>
+						<li class="radio"><input type="radio" name="recommendBlog" value="maybe"><label for="recommendBlog2">
+						Maybe</label></li>
+						<li class="radio"><input type="radio" name="recommendBlog" value="notSure"><label for="recommendBlog3">
+						Not Sure</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="favContent">Favorite content on my blog?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="checkbox"><input type="checkbox" name="favContent" value="productReview"> <label for="favContent1">
+						Product Review</label></li>
+						<li class="checkbox"><input type="checkbox" name="favContent" value="travelStory"><label for="favContent2">
+						Travel Story</label></li>
+						<li class="checkbox"><input type="checkbox" name="favContent" value="curatedPlaylist"><label for="favContent3">
+						Curated Playlist</label></li>
+						<li class="checkbox"><input type="checkbox" name="favContent" value="codingTutor"><label for="favContent4">
+						Coding Tutorial</label></li>
+						<li class="checkbox"><input type="checkbox" name="favContent" value="lifeHacks"><label for="favContent5">
+						Life Hacks</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="improve">What can we improve?</label>
+				</div>
+				<div class="rightTab">
+					<ul style="list-style: none;">
+						<li class="checkbox"><input type="checkbox" name="improve" value="contentDiv"> <label for="improve1">
+						Content Diversity</label></li>
+						<li class="checkbox"><input type="checkbox" name="improve" value="writingStyle"><label for="improve2">
+						Writing Style</label></li>
+						<li class="checkbox"><input type="checkbox" name="improve" value="moreResource"><label for="improve3">
+						More Resources</label></li>
+						<li class="checkbox"><input type="checkbox" name="improve" value="newContent"><label for="improve4">
+						New Content</label></li>
+						<li class="checkbox"><input type="checkbox" name="improve" value="collabOther"><label for="improve5">
+						Collab with Other Blogger</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="improve">What content do you want to see in the future?</label>
+				</div>
+				<div class="rightTab">
+					<textarea rows="4" cols="38" placeholder="Enter what type of content do you want to see.."></textarea>
+				</div>
+			</div>
+			<div class="rowTab">
+				<div class="labels">
+					<label for="improve">Comment or feedback for the blog</label>
+				</div>
+				<div class="rightTab">
+					<textarea rows="4" cols="38" placeholder="Enter any comment or feedback if there is any"></textarea>
+				</div>
+			</div>
+			<button id="submit" type="submit">Submit</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

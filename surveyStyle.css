@@ -1,0 +1,81 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #5ad75a;
+}
+#title{
+	text-align: center;
+}
+#description{
+	text-align: center;
+	margin: 5px;
+}
+#formContent{
+	background-color: white;
+	padding: 20px;
+	margin: 20px 210px auto 210px;
+
+	border-radius: 2px;
+}
+#survey-form{
+	padding: 8px;
+
+	
+}
+.labels {
+	text-align: right;
+	width: 30%;
+	display: inline-block;
+	padding: 5px;
+	margin-top: 2px;	
+	vertical-align: top;
+}
+
+.rightTab{
+	display: inline-block;
+}
+input[type=text], [type=number], [type=email]{
+	width: 144%;
+	padding: 7px;
+	margin: 5px;
+	border: 1px solid #c0c0c0;
+	border-radius: 3px;
+}
+select, textarea {
+	width: 97%;
+	padding: 7px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+ul{
+	display: block;
+}
+.radio, .checkbox{
+	display: block;
+	position: relative;
+
+	top: -8px;
+	left: -40px;
+	padding-bottom: 7px;
+	margin-left: auto;
+	
+}
+#submit {
+	/*Looks*/
+	background-color: #85C1E9;
+	color: #fff;
+	border-radius: 3px;
+	border: 0px solid;
+
+	/*Size*/
+	width: 12%;
+	height: 35px;
+	padding: 8px;
+	margin: 5px;
+	
+	/*Align*/
+	display: block;
+	text-align: center; 
+	margin: 0 auto;
+}
